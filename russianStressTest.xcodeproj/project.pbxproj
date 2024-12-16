@@ -6,14 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		97EA58BD2D106E5A001B34CB /* russianstress in Resources */ = {isa = PBXBuildFile; fileRef = 97EA58BC2D106E5A001B34CB /* russianstress */; };
+		97EA58C02D106E9C001B34CB /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97EA58BF2D106E9C001B34CB /* PythonKit */; };
+		97EA58C92D106F4D001B34CB /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 97EA58C82D106F4D001B34CB /* lib */; };
+		97EA58CB2D106F78001B34CB /* python-stdlib in Resources */ = {isa = PBXBuildFile; fileRef = 97EA58CA2D106F78001B34CB /* python-stdlib */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		97EA589D2D10669D001B34CB /* russianStressTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = russianStressTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EA58BC2D106E5A001B34CB /* russianstress */ = {isa = PBXFileReference; lastKnownFileType = folder; path = russianstress; sourceTree = "<group>"; };
+		97EA58C82D106F4D001B34CB /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		97EA58CA2D106F78001B34CB /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "python-stdlib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		97EA589F2D10669D001B34CB /* russianStressTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = russianStressTest;
+			sourceTree = "<group>";
+		};
+		97EA58C12D106EAF001B34CB /* Frameworks */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EA58C02D106E9C001B34CB /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +48,10 @@
 		97EA58942D10669D001B34CB = {
 			isa = PBXGroup;
 			children = (
+				97EA58CA2D106F78001B34CB /* python-stdlib */,
+				97EA58C82D106F4D001B34CB /* lib */,
+				97EA58C12D106EAF001B34CB /* Frameworks */,
+				97EA58BC2D106E5A001B34CB /* russianstress */,
 				97EA589F2D10669D001B34CB /* russianStressTest */,
 				97EA589E2D10669D001B34CB /* Products */,
 			);
@@ -62,9 +82,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				97EA589F2D10669D001B34CB /* russianStressTest */,
+				97EA58C12D106EAF001B34CB /* Frameworks */,
 			);
 			name = russianStressTest;
 			packageProductDependencies = (
+				97EA58BF2D106E9C001B34CB /* PythonKit */,
 			);
 			productName = russianStressTest;
 			productReference = 97EA589D2D10669D001B34CB /* russianStressTest.app */;
@@ -94,6 +116,9 @@
 			);
 			mainGroup = 97EA58942D10669D001B34CB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				97EA58BE2D106E9C001B34CB /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 97EA589E2D10669D001B34CB /* Products */;
 			projectDirPath = "";
@@ -109,6 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EA58CB2D106F78001B34CB /* python-stdlib in Resources */,
+				97EA58C92D106F4D001B34CB /* lib in Resources */,
+				97EA58BD2D106E5A001B34CB /* russianstress in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97EA58BE2D106E9C001B34CB /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97EA58BF2D106E9C001B34CB /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97EA58BE2D106E9C001B34CB /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97EA58952D10669D001B34CB /* Project object */;
 }

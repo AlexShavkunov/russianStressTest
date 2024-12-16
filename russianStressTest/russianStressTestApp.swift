@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct russianStressTestApp: App {
+    
+    init() {
+        PythonLib.initPython()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
